@@ -18,6 +18,7 @@
 - Do not rush through setup steps just because they are easy for an experienced developer. Setup is part of what the user wants to learn.
 - Invite the user to perform some repeated operations themselves once they have seen the pattern, especially Git status/add/commit/push and Godot editor steps.
 - Keep a visible trail of learning in `docs/` once the project grows: development logs, command notes, design decisions, and mistakes fixed.
+- Keep concise conversation handoff notes in `docs/conversations/` when a session makes meaningful decisions, teaches important concepts, or leaves clear next steps. Prefer summaries over full transcripts.
 
 ## Product Direction
 
@@ -81,6 +82,7 @@ Suggested gameplay modules:
 ## AI Collaboration Rules
 
 - Before changing code, read `AGENTS.md`, `README.md`, and the relevant scenes/scripts.
+- For a new or resumed conversation, also read the latest relevant file in `docs/conversations/` when it exists.
 - Explain the intent of non-trivial edits before making them.
 - Keep changes small and reviewable. Prefer one gameplay feature, bugfix, or documentation update per branch or commit.
 - Preserve the learning value of the project. When adding code, make it understandable to a beginner who is learning Godot and GDScript.
