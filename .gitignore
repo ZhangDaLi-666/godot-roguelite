@@ -1,0 +1,36 @@
+# Godot 4 generated files
+.godot/
+*.translation
+
+# Godot Mono / C# artifacts, in case the project experiments with them later
+.mono/
+data_*/
+mono_crash.*.json
+
+# Local export output
+builds/
+exports/
+*.pck
+*.zip
+*.exe
+*.app
+*.x86_64
+*.arm64
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
