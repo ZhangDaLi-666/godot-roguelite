@@ -3,9 +3,21 @@
 ## Project Mission
 
 - This is a beginner-friendly Godot learning project, a resume portfolio project, and an open-source project.
-- The primary goal is to finish a small but complete playable game, not to chase a large commercial scope.
+- The primary goal is learning from start to finish while building a small but complete playable game. Shipping the game matters, but learning matters more.
 - The project should visibly demonstrate two kinds of growth: AI-assisted development ability and the author's own programming ability.
 - Use Chinese for planning notes, README content, dev logs, and user-facing documentation unless the user asks otherwise.
+
+## Learning-First Collaboration
+
+- Treat this project as a guided learning journey, not a black-box outsourcing task.
+- Before running important commands or making non-trivial changes, explain what will happen, why it is needed, and what the user should observe afterward.
+- After running commands, summarize the important output in beginner-friendly language.
+- When using Git, explain concepts such as working tree, staging area, commit, branch, remote, push, pull, and merge/rebase as they appear.
+- When adding Godot code or scenes, explain the relevant Godot concepts: node, scene, script, signal, exported variable, collision layer, resource, and game loop.
+- Prefer "teach then do" for new concepts: show the command or code, explain it briefly, then execute or implement.
+- Do not rush through setup steps just because they are easy for an experienced developer. Setup is part of what the user wants to learn.
+- Invite the user to perform some repeated operations themselves once they have seen the pattern, especially Git status/add/commit/push and Godot editor steps.
+- Keep a visible trail of learning in `docs/` once the project grows: development logs, command notes, design decisions, and mistakes fixed.
 
 ## Product Direction
 
@@ -74,6 +86,7 @@ Suggested gameplay modules:
 - Preserve the learning value of the project. When adding code, make it understandable to a beginner who is learning Godot and GDScript.
 - Use Codex to explain code, generate small modules, write dev logs, draft README updates, review diffs, and propose tests.
 - Do not replace the author's learning process with opaque generated systems. The final code should be explainable in an interview.
+- If the user says they are not learning enough, slow down immediately and switch to explanation-first mode.
 - If a request is ambiguous, first inspect the project and infer from existing patterns. Ask only when the decision materially affects scope, design, or learning goals.
 
 ## Verification Expectations
@@ -111,6 +124,19 @@ Always mention which verification was actually run. If Godot is not installed or
 - If GitHub CLI is installed, prefer `gh repo create`, `gh pr create`, and `gh pr view` for repository and PR operations.
 - Never commit secrets, private tokens, paid asset source files, or generated export builds.
 
+### Git Learning Notes
+
+- `git status` answers "What changed locally, and what branch am I on?"
+- `git add <file>` moves selected changes into the staging area, which means "include this in the next commit."
+- `git commit -m "message"` creates a local snapshot with a human-readable reason.
+- `git remote -v` shows which GitHub repository this local project is connected to.
+- `git push -u origin main` uploads local commits from `main` to GitHub and sets `origin/main` as the tracked upstream branch.
+- `git pull --rebase` downloads remote changes and replays local commits on top, keeping history easier to read for a beginner project.
+- `AGENTS.md` tells Codex how to behave in this project.
+- `README.md` explains the project to GitHub visitors, recruiters, and the future author.
+- `.gitignore` prevents generated files, local settings, exports, and temporary files from being committed.
+- `LICENSE` tells others what they are legally allowed to do with the open-source project.
+
 ## Review Guidelines
 
 When reviewing this project, prioritize:
@@ -120,4 +146,3 @@ When reviewing this project, prioritize:
 - Missing verification for movement, combat, upgrades, waves, or result screens.
 - Over-engineering that makes the MVP harder to finish.
 - Code that the author would struggle to explain during an interview.
-
