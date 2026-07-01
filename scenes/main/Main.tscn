@@ -1,16 +1,16 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://bdth8c63uthl"]
 
-[ext_resource type="Script" path="res://scripts/main/main.gd" id="1_main_script"]
+[ext_resource type="Script" uid="uid://cpcyxhyhdc35r" path="res://scripts/main/main.gd" id="1_main_script"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1517342859]
 script = ExtResource("1_main_script")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=1005326886]
 offset_right = 1280.0
 offset_bottom = 720.0
 color = Color(0.055, 0.063, 0.082, 1)
 
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="." unique_id=962757569]
 offset_left = 48.0
 offset_top = 36.0
 offset_right = 720.0
@@ -18,32 +18,32 @@ offset_bottom = 84.0
 theme_override_font_sizes/font_size = 32
 text = "Godot Roguelite Learning"
 
-[node name="LessonNote" type="Label" parent="."]
-offset_left = 52.0
-offset_top = 92.0
-offset_right = 760.0
-offset_bottom = 124.0
+[node name="LessonNote" type="Label" parent="." unique_id=1130345982]
+offset_left = 51.0
+offset_top = 91.0
+offset_right = 759.0
+offset_bottom = 123.0
 theme_override_font_sizes/font_size = 18
 text = "Lesson 2: Main scene nodes are now visible."
 
-[node name="ArenaFloor" type="ColorRect" parent="."]
+[node name="ArenaFloor" type="ColorRect" parent="." unique_id=2081544581]
 offset_left = 240.0
 offset_top = 160.0
 offset_right = 1040.0
-offset_bottom = 640.0
-color = Color(0.09, 0.105, 0.13, 1)
+offset_bottom = 625.0
+color = Color(0.005987682, 0.1295565, 0.08473451, 1)
 
-[node name="PlayerPlaceholder" type="ColorRect" parent="."]
+[node name="PlayerPlaceholder" type="ColorRect" parent="." unique_id=6850199]
 offset_left = 616.0
 offset_top = 336.0
 offset_right = 664.0
-offset_bottom = 384.0
+offset_bottom = 385.0
 color = Color(0.19, 0.88, 0.82, 1)
 
-[node name="PlayerLabel" type="Label" parent="."]
-offset_left = 594.0
-offset_top = 392.0
-offset_right = 704.0
-offset_bottom = 420.0
+[node name="PlayerLabel" type="Label" parent="." unique_id=1861931427]
+offset_left = 615.0
+offset_top = 395.0
+offset_right = 725.0
+offset_bottom = 423.0
 theme_override_font_sizes/font_size = 16
 text = "Player"
