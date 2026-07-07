@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cpcyxhyhdc35r" path="res://scripts/main/main.gd" id="1_main_script"]
 [ext_resource type="PackedScene" uid="uid://d32jy21gqhrh7" path="res://scenes/player/player.tscn" id="2_nha0i"]
+[ext_resource type="PackedScene" uid="uid://dfkqdpoxhpx1y" path="res://scenes/enemy/enemy.tscn" id="3_gyg6b"]
 
 [node name="Main" type="Node2D" unique_id=1517342859]
 script = ExtResource("1_main_script")
@@ -36,3 +37,6 @@ color = Color(0.005987682, 0.1295565, 0.08473451, 1)
 
 [node name="Player" parent="." unique_id=169861524 instance=ExtResource("2_nha0i")]
 position = Vector2(640, 360)
+
+[node name="Enemy" parent="." unique_id=83490514 instance=ExtResource("3_gyg6b")]
+position = Vector2(900, 360)
